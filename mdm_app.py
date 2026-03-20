@@ -85,7 +85,7 @@ STEPS = {
 }
 with st.sidebar:
     st.markdown("### 🔗 Pre-MDM Sandbox")
-    st.caption("Data prep & match simulation\nbefore Reltio · Semarchy · MarkLogic")
+    st.caption("Data prep & match simulation\nbefore Reltio · Semarchy · Informatica")
     st.markdown("---")
     for num, label in STEPS.items():
         disabled = num > st.session_state.step
