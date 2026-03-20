@@ -116,7 +116,6 @@ STEPS = {1:"01  Ingest", 2:"02  Profile", 3:"03  Data Quality",
          4:"04  Match Rules", 5:"05  Simulate", 6:"06  Review & Export"}
 
 with st.sidebar:
-<<<<<<< HEAD
     st.markdown("""
     <div style="padding:1rem 0 0.5rem;">
         <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:18px;color:#FFFFFF;letter-spacing:-0.5px;">
@@ -130,11 +129,6 @@ with st.sidebar:
     <div style="font-size:10px;color:#555577;font-family:Montserrat,sans-serif;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px;">WORKFLOW</div>
     """, unsafe_allow_html=True)
 
-=======
-    st.markdown("### 🔗 Pre-MDM Sandbox")
-    st.caption("Data prep & match simulation\nbefore Reltio · Semarchy · Informatica")
-    st.markdown("---")
->>>>>>> 5a28fef1f98ebc8c38eff7004c25970b242fddc7
     for num, label in STEPS.items():
         disabled = num > st.session_state.step
         btn_type = "primary" if st.session_state.step == num else "secondary"
